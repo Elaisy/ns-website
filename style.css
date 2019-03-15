@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    background-color: grey;
+}
+
+.wrapper-top {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.top {
+    display: grid;
+    grid-template-areas:
+    "side1 empty side2"
+}
+
+.side1 {
+    grid-area: side1;
+    min-height: 80px;
+    background-color: grey;
+}
+
+.empty {
+    grid-area: empty;
+    min-height: 80px;
+    background-color: grey;
+
+}
+
+.side2 {
+    grid-area: side2;
+    min-height: 80px;
+    background-color: grey;
+}
+
+.header {
+    min-height: 300px;
+    background-color: mediumaquamarine;
+    
+}
+
+.cta {
+    display: grid;
+    grid-template-areas:
+    "leeg planner planner planner planner planner planner planner planner planner planner leeg2"
+}
+
+.planner {
+    grid-area: planner;
+    background-color: yellow;
+    width: 2fr;
+    margin-top: -50px;
+}
+
+.leeg {
+    grid-area: leeg;
+    background-color: grey;
+    width: 1fr;
+    
+}
+
+.leeg2 {
+    grid-area: leeg2;
+    background-color: grey;
+    width: 1fr;
+    
+}
+
+
+
+.content1 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "contentbox-1 contentbox-2 contentbox-3"
+}
+
+.contentbox-1, .contentbox-2, .contentbox-3 {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    width: 1fr;
+    height: 300px;
+    
+}
+
+.contentbox-1 {
+    grid-area: contentbox-1;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contentbox-2 {
+    grid-area: contentbox-2;
+    margin-top: 20px;
+}
+
+.contentbox-3 {
+    grid-area: contentbox-3;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.subheader {
+    display: grid;
+    background-color: grey;
+
+}
+
+.subheader1 {
+    align-self: center;
+    justify-self: center;
+}
+
+.content2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "contentbox-4 contentbox-5 contentbox-6"
+    "contentbox-7 contentbox-8 contentbox-9"
+}
+
+.contentbox-4, .contentbox-5, .contentbox-6, .contentbox-7, .contentbox-8, .contentbox-9 {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin-top: 20px;
+    width: 1fr;
+    height: 300px;
+}
+
+.contentbox-4 {
+    grid-area: contentbox-4;
+    margin-left: 100px;
+}
+
+.contentbox-5 {
+    grid-area: contentbox-5;
+}
+
+.contentbox-6 {
+    grid-area: contentbox-6;
+    margin-right: 100px;
+}
+
+.contentbox-7 {
+    grid-area: contentbox-7;
+    margin-left: 100px;
+}
+
+.contentbox-8 {
+    grid-area: contentbox-8;
+}
+
+.contentbox-9 {
+    grid-area: contentbox-9;
+    margin-right: 100px;
+}
+
+.subheader2 {
+    align-self: center;
+    justify-self: center;
+}
+
+.content3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "contentbox-10 contentbox-11"
+}
+
+.contentbox-10, .contentbox-11 {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin-top: 20px;
+    height: 300px;
+
+}
+
+.contentbox-10 {
+    grid-area: contentbox-10;
+    width: 2fr;
+    margin-left: 100px;
+}
+
+.contentbox-11{
+    grid-area: contentbox-11;
+    width: 1fr;
+    margin-right: 100px;
+}
+
+.navigatie-row {
+    margin-top: 20px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-areas:
+    "navigatie1 navigatie2 navigatie3 navigatie4"
+}
+
+.navigatie-column ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.navigatie-column {
+    margin-right: 20px;
+}
+
+
